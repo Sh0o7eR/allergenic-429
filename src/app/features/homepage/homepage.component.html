@@ -1,13 +1,13 @@
-<button (click)="chargeOnlyItem()">Vedi allergenic</button>
-<table style="margin-top: 20px;">
+<button (click)="fillItems()">Vedi allergenic</button>
+<table style="margin-top: 20px">
   <tr>
-    <th style="width: 150px; border-bottom: 1px solid black;">ID</th>
-    <th style="width: 150px; border-bottom: 1px solid black;">ItemID</th>
-    <th style="width: 150px; border-bottom: 1px solid black;">Name</th>
+    <th style="width: 150px; border-bottom: 1px solid black">ID</th>
+    <th style="width: 150px; border-bottom: 1px solid black">ItemID</th>
+    <th style="width: 150px; border-bottom: 1px solid black">Name</th>
   </tr>
-  <tr *ngFor="let item of allergens">
-    <td>{{item.id}}</td>
-    <td>{{item.itemId}}</td>
-    <td>{{item.name}}</td>
+  <tr *ngFor="let item; of">
+    <td>{{ item.id }}</td>
+    <td>{{ item.itemId }}</td>
+    <td>{{ item.name }}</td>
   </tr>
 </table>
